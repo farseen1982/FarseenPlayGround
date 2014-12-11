@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.farseen.andriod.farseenplayground.dummy.DummyContent;
+import com.farseen.andriod.farseenplayground.dummy.PageContent;
 
 /**
  * A list fragment representing a list of Items. This fragment also supports
@@ -70,10 +71,9 @@ public class ItemListFragment extends ListFragment {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		// TODO: replace with a real list adapter.
-		setListAdapter(new ArrayAdapter<DummyContent.DummyItem>(getActivity(),
+		setListAdapter(new ArrayAdapter<String>(getActivity(),
 				android.R.layout.simple_list_item_activated_1,
-				android.R.id.text1, DummyContent.ITEMS));
+				PageContent.getStartPage()));
 	}
 
 	@Override
