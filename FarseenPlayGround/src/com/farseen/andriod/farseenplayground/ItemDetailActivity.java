@@ -45,7 +45,7 @@ public class ItemDetailActivity extends FragmentActivity {
 			getSupportFragmentManager().beginTransaction()
 					.add(R.id.item_detail_container, fragment).commit();
 		}
-		WebView wv = (WebView)this.findViewById(R.id.jsView);
+		WebView wv = (WebView)this.findViewById(R.id.webView);
 		wv.loadUrl("www.google.com");
 	}
 
